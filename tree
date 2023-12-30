@@ -1,0 +1,18 @@
+~/.config
+└── hypr
+    ├── applications
+    │   ├── terminal
+    │   │   ├── alacritty
+    │   │   └── kitty
+    │   ├── notifications
+    │   │   └── mako
+    │   ├── launchers
+    │   │   └── rofi
+    │   └── ...
+    ├── scripts
+    ├── themes
+    │   ├── current
+    │   └── pywal
+    ├── wallpapers
+    ├── hyprland.conf
+    └── hyprtheme.conf
