@@ -1,0 +1,24 @@
+#!/bin/bash
+
+config_dir="$HOME/.config/hypr"
+
+# Create the main directory
+mkdir -p "$config_dir/applications"
+
+# Create subdirectories 
+categories=("terminal" "notifications" "launchers" "miscellaneous")
+
+for category in "${categories[@]}"; do
+  mkdir -p "$config_dir/applications/$category"
+done
+
+# Create additional subdirectories
+mkdir -p "$config_dir/scripts"
+mkdir -p "$config_dir/themes/{current,pywal}"
+mkdir -p "$config_dir/wallpapers"
+
+# Create configuration files (empty placeholders)
+touch "$config_dir/hyprland.conf"
+touch "$config_dir/hyprtheme.conf"
+
+echo "Hypr folder structure created at: $config_dir"
